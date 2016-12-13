@@ -106,19 +106,6 @@ public class Utest {
         newDao.updateProduct(newP);
     }
 
-//    @Test
-//    public void TestDeleteHappyCaseAsserts () throws SQLException, DAOException {
-//        when(conn.prepareStatement(anyString())).thenReturn(psmt);
-//
-//        ArgumentCaptor<Integer> intCaptor = ArgumentCaptor.forClass(Integer.class);
-//
-//        Product newP = new Product(345);
-//        newDao.deleteProduct(345);
-//
-//        verify(psmt, times(1)).setInt(anyInt(), intCaptor.capture());
-//        Assert.assertTrue(intCaptor.getAllValues().get(0).equals(345));
-//    }
-
     @Test
     public void TestDeleteHappyCaseIntegration () throws SQLException, DAOException {
 
