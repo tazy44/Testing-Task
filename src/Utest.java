@@ -66,15 +66,6 @@ public class Utest {
     }
 
     @Test
-    public void TestUpdateHappyCase() throws SQLException, DAOException {
-        when(conn.prepareStatement(anyString())).thenReturn(psmt);
-        when(psmt.executeUpdate()).thenReturn(1);
-
-        Product newP = new Product(345);
-        newDao.updateProduct(newP);
-    }
-
-    @Test
     public void TestUpdateHappyCaseAsserts () throws SQLException, DAOException {
         when(conn.prepareStatement(anyString())).thenReturn(psmt);
 
